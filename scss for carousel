@@ -1,0 +1,83 @@
+//Carousel logo
+
+* {
+margin: 0;
+
+  
+}
+
+#slider{
+ height: 500px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.container-logo{
+  width: 1600px;
+  margin: auto;
+}
+
+.subcontainer-logo{
+  width: 85%;
+  margin: auto;
+ }
+
+.slide-img{
+  width: 100%;
+  min-height: 275px;
+  border-radius: 5px;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.slide-img:hover {
+    box-shadow: 0 0 0 200px  rgba(0, 0, 0, 25) inset;
+   }
+
+.slide-img a{
+    opacity: 0;
+    text-decoration: none;
+    transform: scale(0);
+    transition: 0.8s;
+    font-size: 1.5;
+    color: white;
+}
+
+.slide-img:hover {
+   opacity: 1;
+   transform: scale(1);
+}
+
+//Images
+
+.img-1{
+    background-image: url(https://app-632eb9f1c1ac188968ea331f.closte.com/wp-content/uploads/2022/10/4.jpg);
+}
+
+.img-2{
+    background-image: url(https://app-632eb9f1c1ac188968ea331f.closte.com/wp-content/uploads/2022/10/3.jpg);
+}
+
+.img-3{
+    background-image: url(https://app-632eb9f1c1ac188968ea331f.closte.com/wp-content/uploads/2022/10/2.jpg);
+}
+
+.img-4{
+    background-image: url(https://app-632eb9f1c1ac188968ea331f.closte.com/wp-content/uploads/2022/10/1.jpg);
+}
+
+.img-5{
+    background-image: url(https://app-632eb9f1c1ac188968ea331f.closte.com/wp-content/uploads/2022/10/pexels-andrea-piacquadio-3769146-scaled.jpg);
+}
+
+
+ @media(max-width:1600px) {
+    .container{
+        width: 100%;
+    }}
